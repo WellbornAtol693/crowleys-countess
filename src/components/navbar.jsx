@@ -39,17 +39,17 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
+        <Link href="/" prefetch={true}>
           <div className={`rounded p-3 ${router.pathname === '/' ? 'bg-black text-white' : ''} hover:bg-black hover:text-white`}>
             Home
           </div>
         </Link>
-        <Link href="/about">
+        <Link href="/about" prefetch={true}>
           <div className={`rounded p-3 ${router.pathname === '/about' ? 'bg-black text-white' : ''} hover:bg-black hover:text-white`}>
             About
           </div>
         </Link>
-        <Link href="/contact">
+        <Link href="/contact" prefetch={true}>
           <div className={`rounded p-3 ${router.pathname === '/contact' ? 'bg-black text-white' : ''} hover:bg-black hover:text-white`}>
             Contact
           </div>
@@ -111,19 +111,19 @@ const Navbar = () => {
               variants={listItemVariants}
               className=""
             >
-              <Link href="/about">About</Link>
+              <Link href="/" prefetch={true}>Home</Link>
             </motion.div>
             <motion.div
               variants={listItemVariants}
               className=""
             >
-              <Link href="/">Home</Link>
+              <Link href="/about" prefetch={true}>About</Link>
             </motion.div>
             <motion.div
               variants={listItemVariants}
               className=""
             >
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" prefetch={true}>Contact</Link>
             </motion.div>
           </motion.div>
         )}
