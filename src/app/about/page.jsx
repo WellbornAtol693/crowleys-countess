@@ -57,18 +57,18 @@ const AboutPage = () => {
                     {/* Skills container */}
                     <div className='flex flex-col gap-12 justify-center' ref={skillRef}>
                         <motion.h1 initial={{ x: "-300px" }}
-              				animate={isSkillRefInView ? { x: 0 } : {}}
-							transition={{ delay: 0.2 }}
-							className='font-bold text-2xl'
-						>
-							SKILLS
-						</motion.h1>
-				        {/* Skills list */}
+                            animate={isSkillRefInView ? { x: 0 } : {}}
+                            transition={{ delay: 0.2 }}
+                            className='font-bold text-2xl'
+                        >
+                            SKILLS
+                        </motion.h1>
+                        {/* Skills list */}
                         <motion.div 
-	                        initial={{ x: "-300px" }}
-							animate={isSkillRefInView ? { x: 0 } : {}}
-							className="flex gap-4 flex-wrap"
-						>
+                            initial={{ x: "-300px" }}
+                            animate={isSkillRefInView ? { x: 0 } : {}}
+                            className="flex gap-4 flex-wrap"
+                        >
                             <div className='rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                                 JavaScript
                             </div>
